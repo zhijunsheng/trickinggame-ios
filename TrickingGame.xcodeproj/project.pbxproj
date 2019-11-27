@@ -15,6 +15,9 @@
 		E75A55642388BB440093AE0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E75A55622388BB440093AE0C /* LaunchScreen.storyboard */; };
 		E75A556F2388BB450093AE0C /* TrickingGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A556E2388BB450093AE0C /* TrickingGameTests.swift */; };
 		E75A557A2388C0B40093AE0C /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A55792388C0B40093AE0C /* BoardView.swift */; };
+		E75A557C238D38E70093AE0C /* TrickingPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A557B238D38E70093AE0C /* TrickingPiece.swift */; };
+		E75A557E238D3A830093AE0C /* TrickingRank.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A557D238D3A830093AE0C /* TrickingRank.swift */; };
+		E75A5580238D3E800093AE0C /* TrickingBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A557F238D3E800093AE0C /* TrickingBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		E75A556E2388BB450093AE0C /* TrickingGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickingGameTests.swift; sourceTree = "<group>"; };
 		E75A55702388BB450093AE0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E75A55792388C0B40093AE0C /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		E75A557B238D38E70093AE0C /* TrickingPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickingPiece.swift; sourceTree = "<group>"; };
+		E75A557D238D3A830093AE0C /* TrickingRank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickingRank.swift; sourceTree = "<group>"; };
+		E75A557F238D3E800093AE0C /* TrickingBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickingBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +89,12 @@
 			children = (
 				E75A55572388BB430093AE0C /* AppDelegate.swift */,
 				E75A55792388C0B40093AE0C /* BoardView.swift */,
-				E75A55592388BB430093AE0C /* SceneDelegate.swift */,
 				E75A555B2388BB430093AE0C /* ViewController.swift */,
+				E75A557F238D3E800093AE0C /* TrickingBrain.swift */,
+				E75A557B238D38E70093AE0C /* TrickingPiece.swift */,
+				E75A557D238D3A830093AE0C /* TrickingRank.swift */,
 				E75A555D2388BB430093AE0C /* Main.storyboard */,
+				E75A55592388BB430093AE0C /* SceneDelegate.swift */,
 				E75A55602388BB440093AE0C /* Assets.xcassets */,
 				E75A55622388BB440093AE0C /* LaunchScreen.storyboard */,
 				E75A55652388BB440093AE0C /* Info.plist */,
@@ -205,7 +214,10 @@
 			files = (
 				E75A555C2388BB430093AE0C /* ViewController.swift in Sources */,
 				E75A557A2388C0B40093AE0C /* BoardView.swift in Sources */,
+				E75A5580238D3E800093AE0C /* TrickingBrain.swift in Sources */,
+				E75A557C238D38E70093AE0C /* TrickingPiece.swift in Sources */,
 				E75A55582388BB430093AE0C /* AppDelegate.swift in Sources */,
+				E75A557E238D3A830093AE0C /* TrickingRank.swift in Sources */,
 				E75A555A2388BB430093AE0C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

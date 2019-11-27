@@ -1,6 +1,7 @@
 import UIKit
 
 class BoardView: UIView {
+    var trickingPlaneShadow = Set<TrickingPiece>()
     let rectWidth: CGFloat = 104
     let rectHeight: CGFloat = 72.8
     
@@ -17,5 +18,15 @@ class BoardView: UIView {
                     piece1.stroke()
             }
         }
+        
+        for piece in trickingPlaneShadow {
+            let pieceImage = UIImage(named: "\(piece.imageName)")
+            
+            pieceImage?.draw(in: CGRect(x: CGFloat(piece.x) * rectWidth, y: CGFloat(piece.y) * rectHeight, width: rectWidth, height: rectHeight))
+        }
+        
+        
     }
+    
+    
 }

@@ -1,9 +1,8 @@
-//
-//  TrickingRank.swift
-//  TrickingGame
-//
-//  Created by daobao on 2019/11/26.
-//  Copyright © 2019 daobao. All rights reserved.
-//
-
 import Foundation
+
+enum TrickingRank {
+    case rl
+    case ud
+    case rr
+    case bk
+}

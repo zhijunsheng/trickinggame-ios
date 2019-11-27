@@ -1,9 +1,9 @@
-//
-//  TrickingPiece.swift
-//  TrickingGame
-//
-//  Created by daobao on 2019/11/26.
-//  Copyright © 2019 daobao. All rights reserved.
-//
-
 import Foundation
+
+struct TrickingPiece: Hashable {
+    let x: Int
+    let y: Int
+    let isGold: Bool
+    let rank: TrickingRank
+    let imageName: String
+}
