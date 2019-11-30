@@ -9,13 +9,15 @@ class BoardView: UIView {
         // Drawing code
         for j in 0..<10 {
             for i in 0..<7 {
-                    let piece1 = UIBezierPath()
-                    piece1.move(to: CGPoint(x: 0, y: 0 + CGFloat(j) * rectHeight))
-                    piece1.addLine(to: CGPoint(x: rectWidth + CGFloat(i) * rectWidth, y: 0 + CGFloat(j) * rectHeight))
-                    piece1.addLine(to: CGPoint(x: rectWidth + CGFloat(i) * rectWidth, y: rectHeight + CGFloat(j) * rectHeight))
-                    piece1.addLine(to: CGPoint(x: 0, y: rectHeight * (CGFloat(j) + 1)))
-                    piece1.close()
-                    piece1.stroke()
+                let piece1 = UIBezierPath()
+                piece1.move(to: CGPoint(x: 0, y: 0 + CGFloat(j) * rectHeight))
+                piece1.addLine(to: CGPoint(x: rectWidth + CGFloat(i) * rectWidth, y: 0 + CGFloat(j) * rectHeight))
+                piece1.addLine(to: CGPoint(x: rectWidth + CGFloat(i) * rectWidth, y: rectHeight + CGFloat(j) * rectHeight))
+                piece1.addLine(to: CGPoint(x: 0, y: rectHeight * (CGFloat(j) + 1)))
+                piece1.close()
+                #colorLiteral(red: 0.4929098887, green: 0.4924015411, blue: 0, alpha: 0.248234161).setFill()
+                piece1.fill()
+                piece1.stroke()
             }
         }
         
