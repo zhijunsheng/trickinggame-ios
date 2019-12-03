@@ -29,6 +29,11 @@ struct TrickingBrain {
         guard let movingPiece = pieceAt(x: fx, y: fy) else {
             return
         }
+        
+        if let targetPiece = pieceAt(x: tx, y: ty) {
+            trickingPlane.remove(targetPiece)
+        }
+        
         trickingPlane.remove(movingPiece)
         trickingPlane.insert(TrickingPiece(x: tx, y: ty, isGold: movingPiece.isGold, rank: movingPiece.rank, imageName: movingPiece.imageName))
     }
