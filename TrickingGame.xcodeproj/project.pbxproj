@@ -14,12 +14,6 @@
 		E75A55612388BB440093AE0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E75A55602388BB440093AE0C /* Assets.xcassets */; };
 		E75A55642388BB440093AE0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E75A55622388BB440093AE0C /* LaunchScreen.storyboard */; };
 		E75A556F2388BB450093AE0C /* TrickingGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A556E2388BB450093AE0C /* TrickingGameTests.swift */; };
-		E75A557A2388C0B40093AE0C /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A55792388C0B40093AE0C /* BoardView.swift */; };
-		E75A557C238D38E70093AE0C /* TrickingPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A557B238D38E70093AE0C /* TrickingPiece.swift */; };
-		E75A557E238D3A830093AE0C /* TrickingRank.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A557D238D3A830093AE0C /* TrickingRank.swift */; };
-		E75A5580238D3E800093AE0C /* TrickingBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A557F238D3E800093AE0C /* TrickingBrain.swift */; };
-		E75A55822393478C0093AE0C /* TrickingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A55812393478C0093AE0C /* TrickingDelegate.swift */; };
-		E7D712B92397C7B800A583FA /* open_game.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7D712B82397C7B800A583FA /* open_game.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,12 +38,6 @@
 		E75A556A2388BB450093AE0C /* TrickingGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrickingGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E75A556E2388BB450093AE0C /* TrickingGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickingGameTests.swift; sourceTree = "<group>"; };
 		E75A55702388BB450093AE0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E75A55792388C0B40093AE0C /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
-		E75A557B238D38E70093AE0C /* TrickingPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickingPiece.swift; sourceTree = "<group>"; };
-		E75A557D238D3A830093AE0C /* TrickingRank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickingRank.swift; sourceTree = "<group>"; };
-		E75A557F238D3E800093AE0C /* TrickingBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickingBrain.swift; sourceTree = "<group>"; };
-		E75A55812393478C0093AE0C /* TrickingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickingDelegate.swift; sourceTree = "<group>"; };
-		E7D712B82397C7B800A583FA /* open_game.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = open_game.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,13 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				E75A55572388BB430093AE0C /* AppDelegate.swift */,
-				E75A55792388C0B40093AE0C /* BoardView.swift */,
 				E75A555B2388BB430093AE0C /* ViewController.swift */,
-				E75A55812393478C0093AE0C /* TrickingDelegate.swift */,
-				E75A557F238D3E800093AE0C /* TrickingBrain.swift */,
-				E75A557B238D38E70093AE0C /* TrickingPiece.swift */,
-				E7D712B82397C7B800A583FA /* open_game.wav */,
-				E75A557D238D3A830093AE0C /* TrickingRank.swift */,
 				E75A555D2388BB430093AE0C /* Main.storyboard */,
 				E75A55592388BB430093AE0C /* SceneDelegate.swift */,
 				E75A55602388BB440093AE0C /* Assets.xcassets */,
@@ -198,7 +180,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7D712B92397C7B800A583FA /* open_game.wav in Resources */,
 				E75A55642388BB440093AE0C /* LaunchScreen.storyboard in Resources */,
 				E75A55612388BB440093AE0C /* Assets.xcassets in Resources */,
 				E75A555F2388BB430093AE0C /* Main.storyboard in Resources */,
@@ -220,13 +201,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E75A555C2388BB430093AE0C /* ViewController.swift in Sources */,
-				E75A557A2388C0B40093AE0C /* BoardView.swift in Sources */,
-				E75A5580238D3E800093AE0C /* TrickingBrain.swift in Sources */,
-				E75A557C238D38E70093AE0C /* TrickingPiece.swift in Sources */,
 				E75A55582388BB430093AE0C /* AppDelegate.swift in Sources */,
-				E75A557E238D3A830093AE0C /* TrickingRank.swift in Sources */,
 				E75A555A2388BB430093AE0C /* SceneDelegate.swift in Sources */,
-				E75A55822393478C0093AE0C /* TrickingDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
