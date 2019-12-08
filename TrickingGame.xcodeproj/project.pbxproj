@@ -19,6 +19,7 @@
 		E75A557E238D3A830093AE0C /* TrickingRank.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A557D238D3A830093AE0C /* TrickingRank.swift */; };
 		E75A5580238D3E800093AE0C /* TrickingBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A557F238D3E800093AE0C /* TrickingBrain.swift */; };
 		E75A55822393478C0093AE0C /* TrickingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A55812393478C0093AE0C /* TrickingDelegate.swift */; };
+		E7D712B92397C7B800A583FA /* open_game.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7D712B82397C7B800A583FA /* open_game.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		E75A557D238D3A830093AE0C /* TrickingRank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickingRank.swift; sourceTree = "<group>"; };
 		E75A557F238D3E800093AE0C /* TrickingBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickingBrain.swift; sourceTree = "<group>"; };
 		E75A55812393478C0093AE0C /* TrickingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickingDelegate.swift; sourceTree = "<group>"; };
+		E7D712B82397C7B800A583FA /* open_game.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = open_game.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				E75A55812393478C0093AE0C /* TrickingDelegate.swift */,
 				E75A557F238D3E800093AE0C /* TrickingBrain.swift */,
 				E75A557B238D38E70093AE0C /* TrickingPiece.swift */,
+				E7D712B82397C7B800A583FA /* open_game.wav */,
 				E75A557D238D3A830093AE0C /* TrickingRank.swift */,
 				E75A555D2388BB430093AE0C /* Main.storyboard */,
 				E75A55592388BB430093AE0C /* SceneDelegate.swift */,
@@ -195,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7D712B92397C7B800A583FA /* open_game.wav in Resources */,
 				E75A55642388BB440093AE0C /* LaunchScreen.storyboard in Resources */,
 				E75A55612388BB440093AE0C /* Assets.xcassets in Resources */,
 				E75A555F2388BB430093AE0C /* Main.storyboard in Resources */,

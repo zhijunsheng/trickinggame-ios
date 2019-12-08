@@ -22,16 +22,37 @@
                                     <constraint firstAttribute="width" secondItem="Us6-SK-qCJ" secondAttribute="height" multiplier="1:1" id="gdz-U9-LYg"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hL-Vr-vAK">
+                                <rect key="frame" x="20" y="756" width="728" height="100"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvT-kp-FYr">
+                                <rect key="frame" x="20" y="864" width="728" height="102"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="beginTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CWw-oY-2nB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Us6-SK-qCJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9Q8-8y-WBa"/>
+                            <constraint firstItem="4hL-Vr-vAK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Cgi-w3-6Zh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4hL-Vr-vAK" secondAttribute="trailing" constant="20" id="EmT-ex-6ld"/>
+                            <constraint firstItem="lvT-kp-FYr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="L7P-oU-Jhw"/>
+                            <constraint firstItem="4hL-Vr-vAK" firstAttribute="top" secondItem="Us6-SK-qCJ" secondAttribute="bottom" constant="8" symbolic="YES" id="TKy-oG-J4b"/>
                             <constraint firstItem="Us6-SK-qCJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Ygc-tm-NMa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Us6-SK-qCJ" secondAttribute="trailing" constant="20" id="fRD-je-nyv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lvT-kp-FYr" secondAttribute="trailing" constant="20" id="gCg-Dk-KjC"/>
+                            <constraint firstItem="lvT-kp-FYr" firstAttribute="top" secondItem="4hL-Vr-vAK" secondAttribute="bottom" constant="8" symbolic="YES" id="rRW-0f-eAj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="timerLabel" destination="4hL-Vr-vAK" id="K6B-vp-oMn"/>
                         <outlet property="trickingView" destination="Us6-SK-qCJ" id="8FC-oY-gyz"/>
                     </connections>
                 </viewController>
