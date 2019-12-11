@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8240D7E9239C943B002DA238 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8240D7E8239C943B002DA238 /* BoardView.swift */; };
 		E75A55582388BB430093AE0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A55572388BB430093AE0C /* AppDelegate.swift */; };
 		E75A555A2388BB430093AE0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A55592388BB430093AE0C /* SceneDelegate.swift */; };
 		E75A555C2388BB430093AE0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A555B2388BB430093AE0C /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8240D7E8239C943B002DA238 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		E75A55542388BB430093AE0C /* TrickingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrickingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E75A55572388BB430093AE0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E75A55592388BB430093AE0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				E75A55572388BB430093AE0C /* AppDelegate.swift */,
 				E75A555B2388BB430093AE0C /* ViewController.swift */,
 				E75A555D2388BB430093AE0C /* Main.storyboard */,
+				8240D7E8239C943B002DA238 /* BoardView.swift */,
 				E75A55592388BB430093AE0C /* SceneDelegate.swift */,
 				E75A55602388BB440093AE0C /* Assets.xcassets */,
 				E75A55622388BB440093AE0C /* LaunchScreen.storyboard */,
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E75A555C2388BB430093AE0C /* ViewController.swift in Sources */,
+				8240D7E9239C943B002DA238 /* BoardView.swift in Sources */,
 				E75A55582388BB430093AE0C /* AppDelegate.swift in Sources */,
 				E75A555A2388BB430093AE0C /* SceneDelegate.swift in Sources */,
 			);
