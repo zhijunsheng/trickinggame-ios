@@ -12,6 +12,7 @@ class ViewController: UIViewController, TrickingDelegate {
     
     @IBOutlet weak var trickingView: BoardView!
     @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var rulesLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,16 @@ class ViewController: UIViewController, TrickingDelegate {
         trickingView.trickingDelegate = self
         brain.reset()
         trickingView.trickingPlaneShadow = brain.trickingPlane
+        rulesLabel.isHidden = true
+    }
+    
+    @IBAction func showRules(_ sender: Any) {
+        switch rulesLabel.isHidden {
+        case true:
+            rulesLabel.isHidden = false
+        case false:
+            rulesLabel.isHidden = true
+        }
         
     }
     

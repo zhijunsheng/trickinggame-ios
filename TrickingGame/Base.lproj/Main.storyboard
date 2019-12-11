@@ -22,6 +22,24 @@
                                     <constraint firstAttribute="width" secondItem="Us6-SK-qCJ" secondAttribute="height" multiplier="1:1" id="gdz-U9-LYg"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flh-Pf-uLu">
+                                <rect key="frame" x="20" y="20" width="728" height="984"/>
+                                <mutableString key="text">1. move
+“rl” : It can go to its right and left line in random.
+“bk” : It can go like Chess’s bishop and Chinese Chess’s king.
+“rr” : It can go like two Chess’s rook move, but it has to be a right angle.
+“ud” : It can go to its up and down line in random.
+2. capture
+You can eat the other one’s piece and your piece. But not the piece eats its self.
+3. all
+If you move your piece out of the board, and this piece is gone.
+If you get the other one’s piece out of the broad:
+The first time: give a piece to the other one.
+The second time: give all your pieces to the other one. (You lose)</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hL-Vr-vAK">
                                 <rect key="frame" x="20" y="756" width="728" height="100"/>
                                 <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="100"/>
@@ -36,22 +54,41 @@
                                     <action selector="beginTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CWw-oY-2nB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSR-ff-5e3">
+                                <rect key="frame" x="20" y="756" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0Ew-eO-jK1"/>
+                                    <constraint firstAttribute="width" secondItem="nSR-ff-5e3" secondAttribute="height" multiplier="1:1" id="HRa-lG-d7l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                <state key="normal" title="❔"/>
+                                <connections>
+                                    <action selector="showRules:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dsn-Fk-Tc6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="flh-Pf-uLu" secondAttribute="bottom" constant="20" id="2sF-2K-vqa"/>
                             <constraint firstItem="Us6-SK-qCJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9Q8-8y-WBa"/>
                             <constraint firstItem="4hL-Vr-vAK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Cgi-w3-6Zh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4hL-Vr-vAK" secondAttribute="trailing" constant="20" id="EmT-ex-6ld"/>
                             <constraint firstItem="lvT-kp-FYr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="L7P-oU-Jhw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="flh-Pf-uLu" secondAttribute="trailing" constant="20" id="SYg-HO-Tzs"/>
                             <constraint firstItem="4hL-Vr-vAK" firstAttribute="top" secondItem="Us6-SK-qCJ" secondAttribute="bottom" constant="8" symbolic="YES" id="TKy-oG-J4b"/>
                             <constraint firstItem="Us6-SK-qCJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Ygc-tm-NMa"/>
+                            <constraint firstItem="nSR-ff-5e3" firstAttribute="top" secondItem="Us6-SK-qCJ" secondAttribute="bottom" constant="8" id="cwh-yW-6EI"/>
+                            <constraint firstItem="flh-Pf-uLu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="eFT-E0-ayr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Us6-SK-qCJ" secondAttribute="trailing" constant="20" id="fRD-je-nyv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lvT-kp-FYr" secondAttribute="trailing" constant="20" id="gCg-Dk-KjC"/>
                             <constraint firstItem="lvT-kp-FYr" firstAttribute="top" secondItem="4hL-Vr-vAK" secondAttribute="bottom" constant="8" symbolic="YES" id="rRW-0f-eAj"/>
+                            <constraint firstItem="nSR-ff-5e3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sES-lA-YHy"/>
+                            <constraint firstItem="flh-Pf-uLu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zgJ-8k-fnS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="rulesLabel" destination="flh-Pf-uLu" id="bpH-xL-q97"/>
                         <outlet property="timerLabel" destination="4hL-Vr-vAK" id="K6B-vp-oMn"/>
                         <outlet property="trickingView" destination="Us6-SK-qCJ" id="8FC-oY-gyz"/>
                     </connections>
