@@ -14,6 +14,9 @@ class BoardView: UIView {
             }
         }
         drawLines()
+        
+        let piece = UIImage(named: "king-r")
+        piece?.draw(in: CGRect(x: side * 3, y: side * 7, width: side, height: side))
     }
     func drawGrid(col: Int, row: Int) {
         let gird = UIBezierPath(rect: CGRect(x: CGFloat(col) * side, y: CGFloat(row) * side, width: side, height: side))
